@@ -1,0 +1,303 @@
+\documentclass[10pt]{article}
+
+\usepackage[a4paper]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[russian,ngerman]{babel}
+
+\usepackage{etoolbox}
+\usepackage[most]{tcolorbox}
+
+\tcbset{
+    frame code={}
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!5,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=0mm,
+    boxsep=5pt,
+    arc=2pt,outer arc=0pt,
+    }
+
+\newcommand{\vocable}[3][]{%
+  \setlength{\parindent}{0mm}
+  \begin{tcolorbox}
+  \begin{minipage}[t]{0.3\textwidth}
+    \selectlanguage{ngerman}
+    #2
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.3\textwidth}
+    \selectlanguage{russian}
+    #3
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.3\textwidth}
+    \selectlanguage{russian}
+    \textit{#3}
+  \end{minipage}
+  \ifstrempty{#1}{}{%
+    \\[5pt]
+    \null%
+    \hfill%
+    \begin{minipage}[t]{0.95\textwidth}
+      \itshape%
+      \footnotesize%
+      #1
+    \end{minipage}%
+  }%
+  \end{tcolorbox}
+  % \\[3pt]
+  % \vspace{3pt}
+}
+
+\begin{document}
+  \vocable{Mama}{мама}
+  \vocable{wie}{как}
+  \vocable{so}{так}
+  \vocable{Kater}{кот}
+  \vocable{wer}{кто}
+  \vocable{dort}{там}
+  \vocable{Kakao}{какао}
+
+  \vocable{Euro}{евро}
+  \vocable{Nummer, Hotelzimmer}{номер}
+  \vocable{U-Bahn}{метро}
+  \vocable{Torte}{торт}
+  \vocable{Theater}{театр}
+  \vocable{Roman}{роман}
+  \vocable{Karte}{карта}
+  \vocable{Wowa}{}
+  \vocable{Tamara}{}
+  \vocable{Moment}{момент}
+  \vocable{Zimmer}{комната}
+  \vocable{Kamera}{камера}
+  \vocable{Tasse}{чашка}
+  \vocable{das}{это}
+  \vocable{sitzen}{сидеть}
+  \vocable{lesen}{читать}
+  \vocable{Sessel}{кресло}
+  \vocable{Tisch}{стол}
+  \vocable{auf}{на}
+  \vocable{stehen}{стоять}
+  \vocable[Im Sinne von \&]{und}{и}
+
+  \vocable{Samowar}{самовар}
+  \vocable{Kasse}{касса}
+  \vocable{Schema}{схема}
+  \vocable{Charakter}{характер}
+  \vocable{Restaurant}{ресторан}
+  \vocable{Orchester}{оркестр}
+  \vocable{Monument}{монумент}
+  \vocable{Zucker}{сахар}
+  \vocable{Chor}{хор}
+  \vocable{Ananas}{ананас}
+
+  \vocable{Moskau}{Москва}
+  \vocable{Rostow}{}
+  \vocable{Saratov}{Саратов}
+  \vocable{Murmansk}{Мурманск}
+  \vocable{Samara}{Самара}
+  \vocable{Kursk}{Курск}
+  \vocable{Kostroma}{Кострома}
+  \vocable{Omsk}{Омск}
+
+  \vocable{Vera}{Вера}
+  \vocable{Anton}{Антон}
+  \vocable{Katharina}{Екатерина}
+  \vocable{Oksana}{}
+  \vocable{Barbara}{}
+  \vocable{Sweta}{}
+  \vocable{Tarak}{}
+
+  \vocable{nein}{нет}
+  \vocable{nicht}{не}
+  \vocable{ja}{да}
+  \vocable{er}{он}
+  \vocable[3.~Person Singular]{sie}{она}
+  \vocable{es}{оно}
+  \vocable[Ortsangabe]{im, in}{в}
+
+  \vocable{Adresse}{адрес}
+  \vocable{Park}{парк}
+  \vocable{Toilette}{туалет}
+  \vocable{Waggon}{вагон}
+  \vocable{Telegramm}{телеграмма}
+  \vocable{Pass}{паспорт}
+  \vocable{Prospekt, lange breite Straße}{проспект}
+  \vocable{Telefon}{телефон}
+  \vocable{Student}{студент}
+  \vocable{Papa}{папа}
+  \vocable{Paul}{Павел}
+  \vocable{Fotoapparat}{фотоаппарат}
+  \vocable{Programm}{программа}
+  \vocable{programmieren}{программировать}
+  \vocable{Sport}{спорт}
+  \vocable{Gruppe}{группа}
+  \vocable{Wodka}{водка}
+  \vocable{Wasser}{вода}
+  \vocable{Gramm}{грамм}
+  \vocable{Café}{кафе}
+  \vocable{Suppe}{суп}
+  \vocable{Werbung}{реклама}
+  \vocable{Kaffee}{кофе}
+  \vocable{Apotheke}{аптека}
+
+  \vocable{heute}{сегодня}
+  \vocable{gehen}{идти}
+  \vocable{fahren}{поехать}
+  \vocable{dann, nachher, später}{потом}
+  \vocable{und}{а}
+  \vocable{hängen}{висеть}
+  \vocable{trinken}{пить}
+
+  \vocable{Bank}{банк}
+  \vocable{Balkon}{балкон}
+  \vocable{Bus}{абтобус}
+  \vocable{Zoo}{зоопарк}
+  \vocable{Mai}{май}
+  \vocable{Jena}{Йена}
+  \vocable{Objekt}{объект}
+  \vocable{Museum}{музей}
+  \vocable{Saal}{зал}
+  \vocable{Ballett}{балет}
+  \vocable{Basketball}{баскетбол}
+  \vocable{Handball}{гандбол}
+  \vocable{Butterbrot}{бутерброд}
+  \vocable{Kartoffel}{картофель}
+  \vocable{Banane}{банан}
+
+  \vocable{lieben, mögen}{любить}
+  \vocable{spielen}{играть}
+  \vocable{aber}{но}
+  \vocable{auch}{тоже}
+  \vocable{Fußball}{футбол}
+  \vocable{Volleyball}{волейбол}
+  \vocable{Mannschaft}{команда}
+  \vocable{Turnhalle}{спортзал}
+  \vocable{ihn, sein}{его}
+  \vocable{wo}{где}
+
+  \vocable{Taxi}{такси}
+  \vocable{Universität}{университет}
+  \vocable{Institut}{институт}
+  \vocable{Tourist}{турист}
+  \vocable{Exkursion}{экскурсия}
+  \vocable{Flughafen}{аэропорт}
+  \vocable{Juwelier}{ювелир}
+  \vocable{Galerie}{галерея}
+  \vocable{Computer}{компьютер}
+  \vocable{Zitrone}{лимон}
+  \vocable{Rucksack}{рюкзак}
+  \vocable{Gitarre}{гитара}
+  \vocable{Tennis}{теннис}
+  \vocable{Musik}{музыка}
+  \vocable{Frucht}{фрукт}
+
+  \vocable{ich}{я}
+  \vocable{du}{ты}
+  \vocable{wir}{мы}
+  \vocable[Wird auch für Höflichkeitsform verwendet.]{ihr}{вы}
+  \vocable{sie}{они}
+
+  \vocable{Sankt Petersburg}{Санкт-Петербург}
+  \vocable{Passagier}{пассажир}
+  \vocable{Zirkus}{цирк}
+  \vocable{Tscheche}{чех}
+  \vocable{Champagner}{шампанское}
+  \vocable{Journal}{журнал}
+  \vocable{Zigeuner}{цыган}
+  \vocable{Datscha}{дача}
+  \vocable{Schokolade}{шоколад}
+
+  \vocable{Deutscher}{немец}
+  \vocable{Pizzeria}{пиццерия}
+  \vocable{Franzose}{француз}
+  \vocable{Schaschlik}{шашлык}
+  \vocable{Schnitzel}{шницель}
+  \vocable{Shampoo}{шампунь}
+  \vocable{Tee}{чай}
+
+  \vocable{Wladiwostok}{Владивосток}
+
+  \vocable{leben}{жить}
+  \vocable{nähen}{шить}
+  \vocable{rechnen}{считать}
+  \vocable{Reifen}{шина}
+  \vocable{Mann}{мужчина}
+  \vocable[Kosten]{Preis}{цена}
+  \vocable{Ehefrau}{жена}
+  \vocable{Kugel}{шар}
+  \vocable{Hitze, Fieber}{жар}
+  \vocable[techn.]{Scheibe}{шайба}
+
+  \vocable{was}{что}
+  \vocable{Kiwi}{киви}
+  \vocable{Oper}{опера}
+  \vocable{Zentrum}{центр}
+  \vocable{Limonade}{лимонад}
+  \vocable{Bankautomat}{банкомат}
+  \vocable{Wein}{вино}
+  \vocable{Pizza}{пицца}
+
+  \vocable{Wer ist das?}{Кто это?}
+  \vocable{Was ist das?}{Что это?}
+
+  \vocable{Hallo!}{привет!}
+  \vocable{Guten Tag!}{Добрый день!}
+  \vocable[Sie-Anrede]{Guten Tag!}{Здравствуйте!}
+  \vocable[Du-Anrede]{Guten Tag!}{Здравствуй!}
+  \vocable{Tschüss!}{Пока!}
+  \vocable{Auf Wiedersehen!}{До свидания!}
+  \vocable{Das ist richtig!}{Это правильно!}
+  \vocable{danke}{спасибо}
+  \vocable{Bitte!}{Пожалуйста!}
+  \vocable{Entschuldigung!}{Простите!}
+  \vocable[Antwort auf etwas physisches oder ironisch.]{Bitte!}{На здоровье!}
+  \vocable[Antwort auf Nennung des Namens]{Sehr angenehm!}{Очень приятно!}
+  \vocable{Wie heißen Sie?}{Как Вас зовут?}
+  \vocable{Wie heißt du?}{Как тебя зовут?}
+  \vocable{ich heiße}{меня зовут}
+  \vocable{Wie geht es dir/Ihnen?}{Как дела?}
+  \vocable{Und (wie geht es) dir?}{А у тебя (как дела)?}
+  \vocable{gut}{хорошо}
+  \vocable{schlecht}{плохо}
+  \vocable{nicht schlecht}{неплохо}
+  \vocable{ausgezeichnet}{отличный}
+  \vocable{hier}{здесь}
+  \vocable{verstehen}{понимать}
+  \vocable{sprechen}{говорить}
+  \vocable{lernen}{учить}
+  \vocable{Er spricht fließend Russisch.}{Он свободно говорит по-русски.}
+  \vocable{Wie sagt man ... auf Deutsch / Russisch?}{Как будет по-немецки / по-русски ... ?}
+  \vocable[Jugendliche, junge Frau]{Mädchen}{девушка}
+  \vocable{hübsch, schön}{красивый}
+  \vocable{wenn}{когда}
+
+  \vocable{eins}{один}
+  \vocable{zwei}{два}
+  \vocable{drei}{три}
+  \vocable{vier}{четыре}
+  \vocable{fünf}{пять}
+  \vocable{sechs}{шесть}
+  \vocable{sieben}{семь}
+  \vocable{acht}{восемь}
+  \vocable{neun}{девять}
+  \vocable{zehn}{десять}
+  \vocable{elf}{одиннадцать}
+  \vocable{zwölf}{двенадцать}
+  \vocable{dreizehn}{тринадцать}
+  \vocable{vierzehn}{четырнадцать}
+  \vocable{fünfzehn}{пятнадцать}
+  \vocable{sechzehn}{шестнадцать}
+  \vocable{siebzehn}{семнадцать}
+  \vocable{achtzehn}{восемнадцать}
+  \vocable{neunzehn}{девятнадцать}
+  \vocable{zwanzig}{двадцать}
+  \vocable{einunddreißig}{тридцать один}
+\end{document}
